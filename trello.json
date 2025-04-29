@@ -1,0 +1,34 @@
+[
+  {
+    "id": "b1",
+    "title": "Proyecto Trello",
+    "lists": [
+      {
+        "id": "l2",
+        "title": "En progreso",
+        "tasks": [
+          {
+            "id": "t3",
+            "title": "Implementar drag & drop",
+            "done": false
+          }
+        ]
+      },
+      {
+        "id": "l3",
+        "title": "Hecho",
+        "tasks": []
+      },
+      {
+        "id": "h23LYnri2VXF37gQCVlcZ",
+        "title": "Lista nueva",
+        "tasks": []
+      }
+    ]
+  },
+  {
+    "id": "B-zHiklc2TLUkO3E9RSvH",
+    "title": "Nuevo tablero de prueba",
+    "lists": []
+  }
+]
