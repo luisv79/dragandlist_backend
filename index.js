@@ -9,7 +9,11 @@ import taskRoutes from "./routes/task.routes.js"
 
 const app = express() // ← Esto debe ir antes de usar "app"
 
-app.use(cors({ origin: true }))
+app.use(cors({
+  origin: "https://dragandlist.netlify.app/", // tu dominio en producción
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}))
 app.use(express.json())
 
 // Ahora sí puedes usar app.use(...)
@@ -131,8 +135,7 @@ app.get("/lists/:listId/tasks", async (req, res) => {
 
 
 
-const PORT = process.env.PORT || 5000
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`)
-})
+  app.listen(process.env.PORT, () => {
+    console.log(`Servidor corriendo en puerto ${process.env.PORT}`)
+  })
 
