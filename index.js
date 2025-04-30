@@ -10,7 +10,7 @@ import taskRoutes from "./routes/task.routes.js"
 const app = express() // ← Esto debe ir antes de usar "app"
 
 app.use(cors({
-  origin: "https://dragandlist.netlify.app/", // tu dominio en producción
+  origin: "https://dragandlist.netlify.app", // tu dominio en producción
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }))
