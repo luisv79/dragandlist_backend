@@ -9,7 +9,7 @@ import taskRoutes from "./routes/task.routes.js"
 
 const app = express() // ← Esto debe ir antes de usar "app"
 
-app.use(cors())
+app.use(cors({ origin: true }))
 app.use(express.json())
 
 // Ahora sí puedes usar app.use(...)
